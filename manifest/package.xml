@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>APIEndPoints</members>
+        <members>ClaimDetails</members>
+        <members>ClaimLeaveList</members>
+        <members>claimleaveListHttpCalloutMock</members>
+        <members>CLISearchEmployeeDetailsClass</members>
+        <members>CLISearchEmployeeList</members>
+        <members>CLISearchRelatedOrgList</members>
+        <members>EmployeeDetail</members>
+        <members>employeeDetailHttpCalloutMock</members>
+        <members>LeaveDetails</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CLISearch</members>
+        <members>AbsenceStatusReport</members>
+        <members>CLISearchClaimDetailsPopup</members>
+        <members>CLISearchClaimLeaveList</members>
+        <members>CLISearchEmployeeList</members>
+        <members>CLISearchFilter</members>
+        <members>CLISearchLeaveDetailsPopup</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>StaticResource</name>
+    </types>
+    <version>46.0</version>
+</Package>
