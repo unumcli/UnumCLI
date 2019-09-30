@@ -28,17 +28,6 @@ node {
             }
             if (rc != 0) { error 'hub org authorization failed' }
 
-            // need to set default username
-              if (isUnix()) {
-                rmsdu = sh returnDU: true, script: "${toolbelt} force:config:set defaultusername=${HUB_ORG}"
-              }else{
-                   
-                   rmsdu = bat returnDU: true, script: "\"${toolbelt}\" force:config:set defaultusername=${HUB_ORG}"
-              }
-            printf rmsdu
-            println('default username set successfully')
-            println(rmsdu)
-            
             // need to pull out assigned username
               if (isUnix()) {
                 rmsg = sh returnStdout: true, script: "${toolbelt} force:org:create --definitionfile config/project-scratch-def.json --json --setdefaultusername"
